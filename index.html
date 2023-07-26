@@ -7,43 +7,57 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div class="card-component">
+      <div class="card-state__rating">
+        <!-- Rating state start -->
 
-  <!-- Rating state start -->
+        <h2 class="card__title">How did we do?</h2>
 
-  How did we do?
+        <p class="card__body">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <form id="form" class="card__rating">
+          <fieldset>
+            <legend>Rating</legend>
 
-  1 2 3 4 5
+            <input type="radio" id="rating-1" name="rating-1" value="1">
+            <label for="rating-1">1</label><br>
 
-  Submit
+            <input type="radio" id="rating-2" name="rating-2" value="2">
+            <label for="rating-2">2</label><br>
 
-  <!-- Rating state end -->
+            <input type="radio" id="rating-3" name="rating-3" value="3">
+            <label for="rating-3">3</label><br>
 
-  <!-- Thank you state start -->
+            <input type="radio" id="rating-4" name="rating-4" value="4">
+            <label for="rating-4">4</label><br>
 
-  You selected <!-- Add rating here --> out of 5
+            <input type="radio" id="rating-5" name="rating-5" value="5">
+            <label for="rating-5">5</label><br>
+          </fieldset>
 
-  Thank you!
+          <button class="rating__btn--submit">Submit</button>
+        </form>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+        <!-- Rating state end -->
+      </div>
 
-  <!-- Thank you state end -->
+      <div class="card-state__thank-you">
+        <!-- Thank you state start -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <p class="thank-you__result">You selected <span id="js-rating"></span> out of 5</p>
+
+        <h2 class="card__title">Thank you!</h2>
+
+        <p class="card__body">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+
+        <!-- Thank you state end -->
+      </div>
+    </div>
+  </main>
 </body>
 </html>
