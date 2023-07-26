@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
   <main>
     <div class="card-component">
-      <div class="card-state__rating">
+      <div class="card-content card-state__rating">
         <!-- Rating state start -->
+        <img src="images/icon-star.svg" class="icon-star" alt="" />
 
         <h2 class="card__title">How did we do?</h2>
 
@@ -20,7 +26,7 @@
         to help us improve our offering!</p>
 
         <form id="form" class="card__rating">
-          <fieldset>
+          <fieldset class="rating__fieldset">
             <legend>Rating</legend>
 
             <input type="radio" id="rating-1" name="rating-1" value="1">
@@ -39,13 +45,13 @@
             <label for="rating-5">5</label><br>
           </fieldset>
 
-          <button class="rating__btn--submit">Submit</button>
+          <button type="submit" class="rating__btn">Submit</button>
         </form>
 
         <!-- Rating state end -->
       </div>
 
-      <div class="card-state__thank-you">
+      <div class="card-content card-state__thank-you">
         <!-- Thank you state start -->
 
         <p class="thank-you__result">You selected <span id="js-rating"></span> out of 5</p>
