@@ -53,8 +53,50 @@ body {
 }
 
 .rating__fieldset {
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.rating-field {
+  width: 2.75em;
+  height: 2.75em;
+  background-color: var(--dark-blue);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+input[type="radio"] + label {
+  margin-top: 0.35rem;
+  color: var(--medium-grey);
+}
+
+/* Checked */
+
+/* Hover */
+
+/* Focus-visible */
 
 .rating__btn {
   padding: 0.75rem;
