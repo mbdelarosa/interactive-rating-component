@@ -71,32 +71,46 @@ body {
 }
 
 .rating-field {
-  width: 2.75em;
-  height: 2.75em;
-  background-color: var(--dark-blue);
-  border-radius: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-input[type="radio"] {
+input { /* Hides native radio buttons */
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
   margin: 0;
+  position: absolute;
+  z-index: 0;
 }
 
-input[type="radio"] + label {
-  margin-top: 0.35rem;
+input + label {
+  background-color: var(--dark-blue);
   color: var(--medium-grey);
+  width: 3em;
+  height: 3em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+/* Hover */
+input:hover + label {
+  background-color: var(--medium-grey);
+  color: var(--white);
+  cursor: pointer;
 }
 
 /* Checked */
-
-/* Hover */
+input:checked + label {
+  background-color: var(--orange);
+  color: var(--white);
+}
 
 /* Focus-visible */
+input:focus-visible + label {
+  /* TBA */
+}
 
 .rating__btn {
   padding: 0.75rem;
