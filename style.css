@@ -96,20 +96,20 @@ input + label {
 
 /* Hover */
 input:hover + label {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* Checked */
+input:checked + label {
   background-color: var(--medium-grey);
   color: var(--white);
   cursor: pointer;
 }
 
-/* Checked */
-input:checked + label {
-  background-color: var(--orange);
-  color: var(--white);
-}
-
 /* Focus-visible */
 input:focus-visible + label {
-  /* TBA */
+  outline: solid var(--white);
 }
 
 .rating__btn {
@@ -120,6 +120,11 @@ input:focus-visible + label {
   text-transform: uppercase;
   color: var(--white);
   letter-spacing: 0.1em;
+}
+
+.rating__btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 .card-state__thank-you {
