@@ -8,7 +8,7 @@
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
-  --gradient-card: linear-gradient(hsl(215, 22%, 15%), hsl(215, 27%, 12%));
+  --gradient-card: radial-gradient(circle at top, hsl(212, 18%, 17%), hsl(215, 27%, 12%));
 }
 
 body {
@@ -32,7 +32,6 @@ body {
 .card-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .icon-star {
@@ -40,11 +39,17 @@ body {
   padding: 0.75rem;
   border-radius: 1.5rem;
   background-color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  margin-bottom: 0.85rem;
 }
 
 .card__body {
   font-size: 0.875rem;
   color: var(--light-grey);
+  margin-bottom: 1rem;
 }
 
 .card__rating {
@@ -129,4 +134,32 @@ input:focus-visible + label {
 
 .card-state__thank-you {
   display: none;
+}
+
+@media only screen and (min-width: 30rem) {
+  /* Grid */
+  .card-component {
+    max-width: 25rem;
+    border-radius: 1.75rem;
+    padding: 2rem;
+  }
+
+  .icon-star {
+    margin-bottom: 1.5rem;
+  }
+
+  .card__title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card__body {
+    font-size: 0.9rem;
+  }
+
+  input + label {
+    width: 3.25em;
+    height: 3.25em;
+    font-size: 1rem;
+  }
 }
