@@ -133,16 +133,34 @@ input:focus-visible + label {
   cursor: pointer;
 }
 
-.card-state__thank-you {
+.card-state__rating {
   display: none;
+}
+
+.card-state__thank-you {
+  align-items: center;
+  text-align: center;
+}
+
+.illustration-thank-you {
+  max-width: 9rem;
+  margin: 0.75rem 0 1.5rem 0;
+}
+
+.thank-you__result {
+  background-color: var(--dark-blue);
+  padding: 0.5rem 1rem 0.25rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  color: var(--orange);
 }
 
 @media only screen and (min-width: 30rem) {
   /* Grid */
   .card-component {
-    max-width: 25rem;
+    max-width: 26rem;
     border-radius: 1.75rem;
-    padding: 2rem;
+    padding: 2.25rem;
   }
 
   .icon-star {
@@ -155,12 +173,17 @@ input:focus-visible + label {
   }
 
   .card__body {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   input + label {
     width: 3.25em;
     height: 3.25em;
     font-size: 1rem;
+  }
+
+  .illustration-thank-you {
+    max-width: 12rem;
+    margin: 0.75rem 0 1.5rem 0;
   }
 }
