@@ -103,13 +103,13 @@ input + label {
 input:hover + label {
   background-color: var(--orange);
   color: var(--white);
+  cursor: pointer;
 }
 
 /* Checked */
 input:checked + label {
   background-color: var(--medium-grey);
   color: var(--white);
-  cursor: pointer;
 }
 
 /* Focus-visible */
@@ -130,6 +130,7 @@ input:focus-visible + label {
 .rating__btn:hover {
   background-color: var(--white);
   color: var(--orange);
+  cursor: pointer;
 }
 
 .card-state__thank-you {
