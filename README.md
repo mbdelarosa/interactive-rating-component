@@ -68,6 +68,6 @@ Looking forward to challenges where forms also have custom styling
 
 ## Acknowledgments
 
-These threads from the Discord server were a big help (had similar issues and questions):
+These threads from the Discord server were a big help as I was faced with similar issues and questions:
 - [Radio Buttons - Style on input or label](https://discord.com/channels/824970620529279006/1113247011077116014)
 - [Responsive interactive rating component using HTML, CSS and JavaScript](https://discord.com/channels/824970620529279006/1113247011077116014)
