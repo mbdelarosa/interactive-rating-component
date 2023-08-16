@@ -82,7 +82,6 @@ body {
 input { /* Hides native radio buttons */
   -webkit-appearance: none;
   appearance: none;
-  background-color: #fff;
   margin: 0;
   position: absolute;
   z-index: 0;
