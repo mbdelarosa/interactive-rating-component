@@ -20,17 +20,17 @@
         <!-- Rating state start -->
         <img src="images/icon-star.svg" class="icon-star" alt="" />
 
-        <h2 class="card__title">How did we do?</h2>
+        <h2 class="card__title" id="rating-question">How did we do?</h2>
 
         <p class="card__body">Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
 
-        <form id="form" class="card__rating">
-          <fieldset class="rating__fieldset">
+        <form id="form" class="card__rating" novalidate>
+          <fieldset class="rating__fieldset" aria-labelledby="rating-question" aria-describedby="rating-error">
             <legend class="sr-only">Rating</legend>
 
             <div class="rating-field">
-              <input type="radio" id="rating-1" name="rating" value="1">
+              <input type="radio" id="rating-1" name="rating" value="1" required>
               <label for="rating-1">1</label>
             </div>
 
@@ -55,13 +55,15 @@
             </div>
           </fieldset>
 
+          <span id="rating-error" class="form__error" aria-live="polite"></span>
+
           <button type="submit" class="rating__btn">Submit</button>
         </form>
 
         <!-- Rating state end -->
       </div>
 
-      <div class="card-content card-state__thank-you">
+      <div class="card-content card-state__thank-you hidden" aria-live="polite">
         <!-- Thank you state start -->
         <img src="images/illustration-thank-you.svg" class="illustration-thank-you" alt="" />
 

@@ -58,7 +58,7 @@ body {
 }
 
 .rating__fieldset {
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
   border: none;
   display: flex;
   justify-content: space-between;
@@ -133,7 +133,13 @@ input:focus-visible + label {
   cursor: pointer;
 }
 
-.card-state__rating {
+.form__error {
+  margin: 0 0 1rem 0;
+  font-size: 0.75rem;
+  color: var(--orange);
+}
+
+.hidden {
   display: none;
 }
 
@@ -184,6 +190,6 @@ input:focus-visible + label {
 
   .illustration-thank-you {
     max-width: 12rem;
-    margin: 0.75rem 0 1.5rem 0;
+    margin: 0.75rem 0 2rem 0;
   }
 }
